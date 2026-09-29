@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Dashboard</title>
+</head>
+
+<body>
+
+    <h1>Vector Jobs</h1>
+
+    <p>{{ jobs|length }} jobs found</p>
+
+    {% for job in jobs %}
+
+        <div>
+            <h2>{{ job[2] }}</h2>
+
+            <p>Company: {{ job[3] }}</p>
+            <p>City: {{ job[4] }}</p>
+            <p>Working model: {{ job[7] }}</p>
+
+            <a href="{{ job[5] }}" target="_blank">
+                View job
+            </a>
+        </div>
+
+        <hr>
+
+    {% endfor %}
+
+</body>
+</html>

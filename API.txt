@@ -1,0 +1,7 @@
+Request URL: POST
+https://production.api.recruiting-solutions.org/search
+
+X-API-Key: pk_vector-prod_HkAuFFMIfLGnMVIeIQOLDFxdqrSqoVTAGYvKWdgRjzpxWIDgoZsYwwqCXAAYfZSHhvwwOTKIkwySseqFIlNzyiMmFlCMJvwS
+
+Request Payload: 
+{"count":true,"facets":["addresses/countryCode,count:5000","addresses/externalCode,count:5000","entryLevelSearch/code,count:5000","programmingLanguages/code,count:5000","jobFunctions/code,count:5000"],"filter":"datePosted lt 2026-09-29T16:05:35.099Z and ((addresses/any(jt: jt/countryCode eq 'DEU'))) and language eq 'de_DE' and custUnsolicitedApplication ne true","search":"*","searchFields":"jobId,title,description,jobCode,businessUnit,entryLevelSearch/label,workingModel,programmingLanguages/label,countryLanguageSkills,englishSkills,addresses/city","skip":0,"top":15}
